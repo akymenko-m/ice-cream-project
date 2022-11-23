@@ -1,0 +1,78 @@
+
+.about{
+    background-color: var(--bg-color);
+    padding: 61px 0;
+}
+
+.about-pre-title{
+
+        font-weight: 700;
+font-size: 18px;
+line-height: 1.22;
+
+text-align: center;
+text-transform: uppercase;
+
+color: var(--main-text-color);
+margin: 0 auto;
+margin-bottom: 12px;
+}
+
+.section-title{
+    font-family: 'Seymour One';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 38px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: var(--main-text-color);
+margin: 0 auto;
+margin-bottom: 70px;
+}
+
+.about-cow{
+    
+}
+
+.about-wrap{
+    // display: flex;
+}
+
+.about-text{
+    font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 1.76;
+
+text-align: center;
+letter-spacing: 0.04em;
+
+color: var(--main-text-color);
+margin: 0 auto;
+}
+
+.about-text.first{
+    padding-bottom: 30px;
+    margin-bottom: 4px;
+}
+
+.about-text.last{
+    display: none;
+}
+
+.about-button{
+    
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 1.29;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #000000;
+}

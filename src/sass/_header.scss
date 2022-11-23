@@ -1,0 +1,126 @@
+.header {
+  background-color: $green-background;
+  padding: 12px 24px 0 20px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.header__title {
+  font-family: 'Seymour One', sans-serif;
+  font-size: 26px;
+  color: $main-text-color;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 247px;
+  margin-bottom: 32px;
+  line-height: calc(32.68 / 26);
+}
+
+.header__title span:first-child {
+  font-size: 26px;
+
+}
+
+.header__title span:last-child {
+  font-size: 34px;
+  line-height: calc(32.81 / 34);
+}
+
+.header__button-product {
+  font-size: 12px;
+  font-weight: 600;
+  color: $black-color;
+  display: inline-block;
+  border: 2px solid $accent-color;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 11px 26px;
+  margin-right: 12px;
+  line-height: calc(14.63 / 12);
+
+}
+
+.header__link-how {
+  color: $accent-color;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: calc(14.63 / 12);
+}
+
+.menu-toggle {
+  min-height: 32px;
+  min-width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: $white-color;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  color: olive;
+
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $green-background;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.mobile-menu__link {
+  font-size: 32px;
+  font-weight: 700;
+  color: $main-text-color;
+  line-height: calc(58.51 / 48);
+}
+.menu-button{
+  @extend %button;
+  max-width: 152px;
+}

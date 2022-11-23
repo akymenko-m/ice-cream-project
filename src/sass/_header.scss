@@ -120,7 +120,8 @@
   color: $main-text-color;
   line-height: calc(58.51 / 48);
 }
-.menu-button{
+
+.menu-button {
   @extend %button;
   max-width: 152px;
 }

@@ -1,24 +1,114 @@
 .visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-  }
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
-    .reviews-blok {
-      justify-content: center;
-      align-items: center;
-    }
-  
+.reviews-blok {
+  justify-content: center;
+  align-items: center;
+}
+
 .container.reviews {
   position: relative;
   top: -32px;
+  margin-bottom: -32px;
+  @media screen and (min-width: 768px) {
+    top: -144px;
+    margin-bottom: -144px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    top: -98px;
+    margin-bottom: -98px;
+  }
+}
+
+.reviews_container {
+  background-color: $green-background;
+  padding: 35px 39px;
+  border-radius: 24px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 705px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.reviews_image {
+  display: block;
+  margin: 0 auto;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-top: 40px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.reviews_text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
+  text-align: center;
+  color: $main-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.reviews_title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  text-align: center;
+  color: $dark-text-color;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.pagination.no-active {
+  background-color: $secondary-green-background;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 9px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $green-background;
   @media screen and (min-width:768px) {
       top: -144px;
       margin-bottom: -144px;
@@ -30,84 +120,6 @@
     }
 }
 
-    .reviews_container {
-      background-color: $green-background;
-      padding: 35px 39px;
-      border-radius: 24px;
-  
-      @media screen and (min-width: 480px) {
-        max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      @media screen and (min-width: 768px) {
-        max-width: 705px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-  
-      @media screen and (min-width: 1200px) {
-        max-width: 968px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    }
-  
-    .reviews_image {
-      display: block;
-      margin: 0 auto;
-      width: 85px;
-      height: 85px;
-      border-radius: 50%;
-      margin-top: 40px;
-      margin-bottom: 32px;
-      text-align: center;
-    }
-  
-    .reviews_text {
-      font-family: "Montserrat";
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 2.55;
-      text-align: center;
-      color: $main-text-color;
-  
-      @media screen and (min-width: 768px) {
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.86;
-      }
-  
-      @media screen and (min-width: 1200px) {
-        font-size: 16px;
-      }
-    }
-  
-    .reviews_title {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 1.86;
-      text-align: center;
-      color: $dark-text-color;
-      margin-top: 32px;
-    }
-  
-    .pagination {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      background-color: $green-background;
-      margin-top: 32px;
-    }
-
-    .pagination.no-active {
-      background-color: $secondary-green-background;
-    }
-  
-    .swiper {
-      display: flex;
-      gap: 18px;
-      align-items: center;
-      justify-content: center;
-    }
+// .swiper-slide {
+//   margin-bottom: 32px;
+// }

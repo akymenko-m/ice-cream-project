@@ -1,6 +1,7 @@
 
 .gallery-reviews {
-// position: relative;
+  position: relative;
+  padding-bottom: 393px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,6 +26,7 @@
     }
   }
   @media screen and (min-width: 768px) {
+    padding-bottom: 379px;
     background-image: linear-gradient(to right, #fafbff66 0%, #f5f5f500 0%),
       url('../images/bg-1x.jpg');
 
@@ -34,6 +36,9 @@
       background-image: linear-gradient(to right, #fafbff66 0%, #f5f5f500 0%),
         url('../images/bg-2x.jpg');
     }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 228px;
   }
 }
 

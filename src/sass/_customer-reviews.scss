@@ -106,6 +106,15 @@
 
 .swiper-pagination-bullet-active {
   background-color: $green-background;
+  @media screen and (min-width:768px) {
+      top: -144px;
+      margin-bottom: -144px;
+    }
+  
+    @media screen and (min-width:1200px) {
+      top: -98px;
+      margin-bottom: -98px;
+    }
 }
 
 // .swiper-slide {

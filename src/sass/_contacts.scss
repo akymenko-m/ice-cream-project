@@ -10,13 +10,20 @@
 }
 
 .contacts__list {
+    position: relative;
+    top: -353px;
+    margin-bottom: -353px;
     display:flex;
     flex-direction: column;
     gap: 16px;
     @media screen and (min-width:768px) {
+        top: -299px;
+        margin-bottom: -299px;
         flex-direction: row;
     }
     @media screen and (min-width:1200px) {
+        top: -128px;
+        margin-bottom: -128px;
         gap: 32px;
     }
 }
@@ -94,6 +101,9 @@
     }
     @media screen and (min-width:1200px) {
         font-size: 16px;
+    }
+    &:hover, &:focus {
+        text-decoration: underline;
     }
 }
 
@@ -210,12 +220,30 @@
     font-size: 14px;
     line-height: calc(18/14);
     color: #131313;
+    
 }
-// .contacts__button--full {
-//     margin-left: 0 auto;
-// }
-
+.contacts__button--full {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        background-color: #0A8817;
+        color: #FFFFFF;
+    }
+    &:hover .contacts__icon-next, &:focus .contacts__icon-next {
+        fill: #FFFFFF;
+    }
+}
+.contacts__button--border {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        border-color: #0A8817;
+        color: #FFFFFF;
+    }
+    &:hover .contacts__icon-next, &:focus .contacts__icon-next {
+        fill: #FFFFFF;
+    }
+}
 .contacts__icon-next {
     margin-left: 4px;
     fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

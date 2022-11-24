@@ -1,14 +1,30 @@
 .contacts {
     padding-bottom: 60px;
-    background-color: #84A178;
+    background-color: $green-background;
+    @media screen and (min-width:768px) {
+        padding-bottom: 40px;
+    }
+    @media screen and (min-width:1200px) {
+        padding-bottom: 120px;
+    }
 }
 
 .contacts__list {
+    position: relative;
+    top: -353px;
+    margin-bottom: -353px;
     display:flex;
     flex-direction: column;
     gap: 16px;
     @media screen and (min-width:768px) {
+        top: -299px;
+        margin-bottom: -299px;
         flex-direction: row;
+    }
+    @media screen and (min-width:1200px) {
+        top: -128px;
+        margin-bottom: -128px;
+        gap: 32px;
     }
 }
 
@@ -18,7 +34,12 @@
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     @media screen and (min-width:768px) {
-        padding: 40px 32px 24px 32px;
+        width: calc((100% - 32px) / 3);
+        padding: 40px 24px 29px 24px;
+    }
+    @media screen and (min-width:1200px) {
+        width: calc((100% - 64px) / 3);
+        padding: 40px 40px 32px 40px;
     }
 }
 
@@ -35,19 +56,28 @@
     color: #131313;
     background-color: #F8D24E;
     border-radius: 4px;
-    @media screen and (min-width:860px) {
+    @media screen and (min-width:768px) {
         margin-bottom: 32px;
         font-size: 16px;
+        padding: 0 14px;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        padding: 0 15px;
     }
 }
+
 .contacts__location {
     font-weight: 500;
     font-size: 12px;
     font-style: normal;
     line-height: calc(22/12);
-    letter-spacing: 0.04em;
+    letter-spacing: .04em;
     color: #131313;
-    @media screen and (min-width:860px) {
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width:1200px) {
         font-size: 16px;
     }
 }
@@ -62,36 +92,58 @@
     line-height: calc(22/12);
     letter-spacing: .04em;
     color: #D6936D;
-    @media screen and (min-width:860px) {
+    .contacts__item:nth-child(2) & {
+        max-width: 212px;
+    }
+    @media screen and (min-width:768px) {
         margin-top: 12px;
         font-size: 14px;
     }
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+    }
+    &:hover, &:focus {
+        text-decoration: underline;
+    }
 }
-.contacts__item:nth-child(2) .contacts__address {
-    max-width: 212px;
-}
+
 .contacts__work-time {
     position: relative;
     margin: 23px 0;
     padding: 23px 0;
+    @media screen and (min-width:768px) {
+        margin-top: 32px;
+        margin-bottom: 29px;
+        padding: 32px 0;
+    }
+    @media screen and (min-width:1200px) {
+        margin-bottom: 32px;
+    }
+    &::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 0;
+        background-color: #E1E1E1;
+    }
+    &::after {
+        content: "";
+        display: block;
+         width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+        background-color: #E1E1E1;
+    }
 }
-.contacts__work-time::before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 0;
-    background-color: #E1E1E1;
-}
-.contacts__work-time::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    bottom: 0;
-    background-color: #E1E1E1;
+
+.contacts__workdays-time {
+    margin-bottom: 8px;
+    @media screen and (min-width:1200px) {
+        margin-bottom: 12px;
+    }
 }
 
 .contacts__work-day {
@@ -99,7 +151,10 @@
     font-size: 12px;
     line-height: calc(22/12);
     color: #131313;
-    @media screen and (min-width:860px) {
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width:1200px) {
         font-size: 16px;
     }
 }
@@ -109,10 +164,16 @@
     font-size: 12px;
     line-height: calc(22/12);
     color: #ABABAB;
-    @media screen and (min-width:860px) {
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width:1200px) {
         font-size: 16px;
     }
 }
+// .contacts__work-time:nth-child(2) .contacts__work-hours {
+//     margin-bottom: 8px;
+// }
 
 .contacts__link {
     display: block;
@@ -123,9 +184,34 @@
     line-height: calc(22/12);
     color: #131313;
     text-decoration: none;
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
 }
+
+.contacts__button-block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    @media screen and (min-width:768px) {
+        margin-top: 40px;
+        flex-direction: row;
+    }
+    @media screen and (min-width:1200px) {
+        margin-top: 60px;
+    }
+}
+
 .contacts__button {
-    margin: 0 auto;
     width: 196px;
     display: flex;
     justify-content: center;
@@ -134,12 +220,30 @@
     font-size: 14px;
     line-height: calc(18/14);
     color: #131313;
+    
 }
 .contacts__button--full {
-    margin-top: 20px; 
-    margin-bottom: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        background-color: #0A8817;
+        color: #FFFFFF;
+    }
+    &:hover .contacts__icon-next, &:focus .contacts__icon-next {
+        fill: #FFFFFF;
+    }
+}
+.contacts__button--border {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+        border-color: #0A8817;
+        color: #FFFFFF;
+    }
+    &:hover .contacts__icon-next, &:focus .contacts__icon-next {
+        fill: #FFFFFF;
+    }
 }
 .contacts__icon-next {
     margin-left: 4px;
     fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

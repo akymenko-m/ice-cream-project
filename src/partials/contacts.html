@@ -9,10 +9,14 @@
                         Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
                 </address>
                 <div class="contacts__work-time">
-                    <p class="contacts__work-day">Monday - Friday</p>
-                    <p class="contacts__work-hours">06:00 AM - 10:00 PM</p>
-                    <p class="contacts__work-day">Saturday - Sunday</p>
-                    <p class="contacts__work-hours">08:00 AM - 16:00 PM</p>
+                    <div class="contacts__workdays-time">
+                        <p class="contacts__work-day">Monday - Friday</p>
+                        <p class="contacts__work-hours">06:00 AM - 10:00 PM</p>
+                    </div>
+                    <div class="contacts__holidays-time">
+                        <p class="contacts__work-day">Saturday - Sunday</p>
+                        <p class="contacts__work-hours">08:00 AM - 16:00 PM</p>
+                    </div>
                 </div>
                 <div>
                     <a href="tel:+61(0)383766284" class="contacts__link">+61(0) 383 766 284</a>
@@ -55,15 +59,18 @@
             </li>
         </ul>
 
-        <button type="button" class="contacts__button contacts__button--full button">Our Locations
-            <svg class="contacts__icon-next" width="12" height="12">
-                <use href="./images/icons.svg#icon-next"></use>
-            </svg>
-        </button>
-        <button type="button" class="contacts__button contacts__button--border button button__secondary">Franchise
-            <svg class="contacts__icon-next" width="12" height="12">
-                <use href="./images/icons.svg#icon-next"></use>
-            </svg>
-        </button>
+        <div class="contacts__button-block">
+            <button type="button" class="contacts__button contacts__button--full button" data-modal-open-location>Our
+                Locations
+                <svg class="contacts__icon-next" width="12" height="12">
+                    <use href="./images/icons.svg#icon-next"></use>
+                </svg>
+            </button>
+            <button type="button" class="contacts__button contacts__button--border button button__secondary">Franchise
+                <svg class="contacts__icon-next" width="12" height="12">
+                    <use href="./images/icons.svg#icon-next"></use>
+                </svg>
+            </button>
+        </div>
     </div>
 </section>

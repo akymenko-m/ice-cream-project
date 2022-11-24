@@ -39,7 +39,6 @@
 
 .swiper {
   max-width: 1013px;
- margin-bottom: 20px;
 }
 
 .swiper-slide {
@@ -48,5 +47,11 @@
 
 .container.gallery {
 position: relative;
-top: -45px;
+top: -32px;
+@media screen and (min-width:768px) {
+  top: -144px;
+}
+@media screen and (min-width:1200px) {
+  top: -98px;
+}
 }

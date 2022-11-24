@@ -1,10 +1,14 @@
+@import './variables';
 @import './common';
 @import './base';
-@import './contacts';
-@import './variables';
+@import './header';
 @import './gallery';
 @import './customer-reviews';
 @import './template';
+
+@import './contacts';
+@import './modal-locations';
+
 @import './header';
 @import './products';
 

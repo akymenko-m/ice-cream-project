@@ -1,0 +1,86 @@
+<header class='header'>
+  <nav class='header__nav'>
+    <a class='header__logo' href=''><img alt='logo' src='./images/logo-ice-cream.png' /></a>
+    <div class='header__buttons-menu'>
+      <button
+        aria-controls='mobile-menu'
+        aria-expanded='false'
+        class='menu-toggle js-open-menu'
+      >
+        <svg fill='none' height='32' viewBox='0 0 32 32' width='32' xmlns='http://www.w3.org/2000/svg'>
+          <path
+            d='M26.7333 14H5.26667C4.56711 14 4 14.4253 4 14.95V15.05C4 15.5747 4.56711 16 5.26667 16H26.7333C27.4329 16 28 15.5747 28 15.05V14.95C28 14.4253 27.4329 14 26.7333 14Z'
+            fill='white' />
+          <path
+            d='M26.7333 20H5.26667C4.56711 20 4 20.4253 4 20.95V21.05C4 21.5747 4.56711 22 5.26667 22H26.7333C27.4329 22 28 21.5747 28 21.05V20.95C28 20.4253 27.4329 20 26.7333 20Z'
+            fill='white' />
+          <path
+            d='M26.7333 8H5.26667C4.56711 8 4 8.42533 4 8.95V9.05C4 9.57467 4.56711 10 5.26667 10H26.7333C27.4329 10 28 9.57467 28 9.05V8.95C28 8.42533 27.4329 8 26.7333 8Z'
+            fill='white' />
+        </svg>
+
+      </button>
+      <button class='header__button'>Buy now
+        <svg class='icon-arrow' height='12' width='12'>
+          <use href='./images/icons.svg#icon-arrow'></use>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  <div>
+    <h1 class='header__title'>
+      <span>ice cream</span>
+      <span>made with</span>
+      <span>passion</span>
+    </h1>
+    <a class='header__button-product' href='#'>Products</a>
+    <a class='header__link-how' href='#'>How it`s made?</a>
+  </div>
+  <div class='header__picture-blur'></div>
+  <picture class='header__picture-hero'>
+    <source
+      media='(min-width: 1200px)'
+      srcset='./images/hero-desk@1x.png 1x, ./images/hero-desk@2x.png 2x'
+
+    />
+    <source
+      media='(min-width: 768px)'
+      srcset='./images/hero-tab@1x.png 1x, ./images/hero-tab@2x.png 2x '
+
+    />
+    <source
+      media='(min-width: 220px)'
+      srcset='./images/hero-mob@1x.png 1x, ./images/hero-mob@2x.png 2x'
+
+    />
+
+    <img alt='hero' src='./images/hero-mob@1x.png' />
+  </picture>
+
+  <div class='header__information'>
+    <picture class='header__picture'>
+      <source
+        media='(min-width: 1200px)'
+        srcset='./images/ice-desk@1x.png 1x, ./images/ice-desk@2x.png 2x' />
+      <source
+        media='(min-width: 768px)'
+        srcset='./images/ice-tab@1x.png 1x, ./images/ice-tab@2x.png 2x' />
+
+      <img alt='ice-cream' src='./images/ice-tab@1x.png' />
+    </picture>
+    <div class='header__text-wrapper'>
+      <p class='header__text'>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+      </p>
+      <svg class='icon-long-arrow' height='16' width='40'>
+        <use href='./images/icons.svg#icon-long-arrow'></use>
+      </svg>
+    </div>
+  </div>
+  <div class='header__places'>
+    <ul class='header__places-list'>
+      <li><p class='header__places-number'>16</p><p class='header__places-name'>cafes</p></li>
+      <li><p class='header__places-number'>23</p><p class='header__places-name'>food trucks</p></li>
+    </ul>
+  </div>
+</header>

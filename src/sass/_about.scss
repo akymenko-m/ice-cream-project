@@ -65,7 +65,7 @@
             height: 356px;
             margin: 0;
             margin-bottom: 60px;
-    
+
         }
 @media screen and (min-width: 1200px) {
     width: 490px;
@@ -74,7 +74,7 @@
     margin-bottom: 60px;
 
 }
-                
+
 }
 
 .about__bg-img::after {
@@ -92,24 +92,24 @@
         (min-resolution: 2dppx) {
             background-image: url("../images/cow-2x-mob.jpg");
         }
-    
+
         @media screen and (min-width: 768px) {
             width: 336px;
             height: 356px;
             background-image: url("../images/cow-1x-tab.jpg");
-    
+
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url("../images/cow-2x-tab.jpg");
             }
         }
-    
+
         @media screen and (min-width: 1200px) {
             width: 490px;
             height: 490px;
             background-image: url("../images/cow-1x-desk.jpg");
-    
+
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -129,14 +129,14 @@
         @media screen and (min-width: 1200px) {
             max-width: 370px;
         }
-    
+
 }
 
 .hidden {
     display: none;
     @media screen and (min-width: 768px) {
             display: inline;
-    
+
         }
 }
 
@@ -156,7 +156,7 @@
             display: inline;
             margin: 0;
             padding: 0;
-    
+
         }
 }
 

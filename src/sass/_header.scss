@@ -1,6 +1,7 @@
 .header {
   background: $green-background;
   width: 100vw;
+  overflow: hidden;
 }
 
 .container__background {
@@ -189,6 +190,7 @@
   position: absolute;
   bottom: 0;
   left: 80px;
+  animation: animateHero 1.5s;
 }
 
 @media (min-width: 768px) {
@@ -207,7 +209,6 @@
   }
 }
 
-
 .header__picture-blur {
   position: absolute;
   bottom: -10px;
@@ -218,6 +219,7 @@
   filter: blur(26.8405px);
   border-radius: 70px;
   transform: rotate(20deg);
+  animation: animateBlur 1.5s;
 }
 
 @media (min-width: 768px) {
@@ -230,7 +232,6 @@
     background: rgba(252, 252, 252, 0.44);
     filter: blur(26.8405px);
     border-radius: 110px;
-    transform: rotate(20deg);
   }
 }
 
@@ -244,10 +245,24 @@
     background: rgba(252, 252, 252, 0.44);
     filter: blur(26.8405px);
     border-radius: 190px;
-    transform: rotate(20deg);
   }
 }
-
+@keyframes animateHero {
+  0% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes animateBlur {
+  0% {
+    transform: translateY(60%);
+  }
+  100% {
+    transform: translateY(0) rotate(20deg);
+  }
+}
 
 .menu-toggle {
   min-height: 32px;

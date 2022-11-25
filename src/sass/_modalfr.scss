@@ -1,4 +1,4 @@
-.backdrop__modal-locations {
+.backdrop__modalfr {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,22 +14,19 @@
     }
 }
 
-.backdrop__modal-locations.is-hidden .modal-locations {
+.backdrop__modalfr.is-hidden .modalfr {
     @media screen and (min-width: 320px) {
         transform: translate(-50%, 0%) scale(0.5);
     }
 }
 
-.modal-locations {
+.modalfr {
     position: relative;
     max-width: 280px;
-    min-height: 365px;
-    padding: 27px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid $accent-color;
-    background-color: $modal-bg-color;
+    min-height: 674px;
+    padding: 28px;
+    border: 2px solid #F8D24E;
+    background-color: #FCFCFC;
     border-radius: 10px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @media screen and (min-width: 320px) {
@@ -41,23 +38,22 @@
     }
     @media screen and (min-width: 768px) {
         max-width: 568px;
-        min-height: 458px;
+        min-height: 668px;
         padding: 32px 60px;
     }
 }
-.modal-locations__bnt-close {
+.modalfrs__bnt-close {
     position: absolute;
     top: 12px;
     right: 12px;
     width: 20px;
     height: 20px;
-    padding: 0;
     background-color: transparent;
     border: none;
     cursor: pointer;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        fill: $accent-color;
+        fill: #F8D24E;
     }
     @media screen and (min-width: 768px) {
         width: 24px;
@@ -65,52 +61,55 @@
     }
 }
 
-.modal-locations__title {
+.modalfr__title {
     margin-bottom: 20px;
     text-align: center;
-    font-family: $secondary-font-family;
+    font-family: 'Seymour One';
     font-weight: 400;
     font-size: 16px;
     line-height: calc(24/16);
-    color: $dark-text-color;
+    color: #131313;
     @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
+        margin-bottom: 24px;
         font-size: 20px;
-        line-height: calc(28/20);
     }
 }
 
-.modal-locations__map {
+.modalfr__text {
+    
+
+font-weight: 400;
+font-size: 14px;
+line-height: 1.4;
+color: #131313;
+
     margin-bottom: 24px;
-    max-width: 224px;
-    max-height: 199px;
-    border-radius: 10px;
-    overflow: hidden;
+    max-width: 222px;
+    max-height: 240px;
+    
     @media screen and (min-width: 768px) {
         margin-bottom: 32px;
         max-width: 448px;
-        max-height: 260px;
+        max-height: 132px;
     }
 }
-
-.modal-locations_link {
-    min-width: 134px;
-    padding: 13px 33px;
-    font-style: normal;
+.modalfr_button {
+    margin: 0 auto;
+    min-width: 114px;
+    padding: 12px 34px;
+    text-align: center;
     font-weight: 600;
     font-size: 12px;
     line-height: calc(15/12);
-    color: $dark-text-color;
-    background-color: $accent-color;
-    border-radius: 10px;
-    letter-spacing: 0;
+    color: #131313;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    @media screen and (min-width:768px) {
-        min-width: 145px;
+    @media screen and (min-width: 768px) {
+        min-width: 121px;
         font-size: 14px;
+        line-height: calc(17/14);
     }
     &:hover, &:focus {
-        background-color: $hover-bg-color;
-        color: $white-color;
+        background-color: #0A8817;
+        color: #FFFFFF;
     }
 }

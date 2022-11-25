@@ -69,9 +69,19 @@
 
   &__video-area {
     position: relative;
-    border-radius: 10px;
     width: 224px;
     height: 199px;
+
+    @media screen and (min-width: 768px) {
+      width: 448px;
+      height: 205px;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
     background-color: $black-color;
 
     @media screen and (min-width: 768px) {
@@ -87,8 +97,13 @@
     transform: translate(-50%, -50%);
     fill: $main-text-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       fill: #e3e3e3;
+    }
+
+    &:active {
+      fill: transparent;
     }
   }
 

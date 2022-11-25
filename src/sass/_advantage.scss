@@ -1,130 +1,178 @@
 .adv-value {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.22;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: $main-text-color;
-    margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.22;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $main-text-color;
+  margin-bottom: 16px;
+
 }
 
+@media (min-width: 768px) {
+  .adv-value {
+    font-size: 48px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv-value {
+    font-size: 58px;
+  }
+}
+
+
 .adv {
-    background-color: #84A178;
+  background-color: #84A178;
 }
 
 .adv-list {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 1px;
-    @media screen and (min-width: 768px) {
-            display: flex;
-            justify-content: space-between;
-            gap: 80px;
-            align-items: baseline;
-            padding-bottom: 100px;
-    }
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    align-items: baseline;
+    padding-bottom: 100px;
+  }
 }
 
-.adv-item{
-    @media screen and (min-width: 768px) {
-            width: 152px;
-            align-items: center;
-        }
-                @media screen and (min-width: 1200px) {
-                    width: 100%;
-                    align-items: center;
-                }
+.adv-item {
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    align-items: center;
+  }
 
 }
 
-.adv-descr1{
-    font-family: 'Montserrat', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 170%;
-        text-align: center;
-        color: #FCFCFC;
-        max-width: 230px;
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 94px;
+.adv-descr1 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  text-align: center;
+  color: #FCFCFC;
+  max-width: 230px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 94px;
+}
+
+@media (min-width: 768px) {
+  .adv-descr1 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv-descr1 {
+    font-size: 16px;
+  }
 }
 
 .adv-descr2 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 170%;
-    text-align: center;
-    color: #FCFCFC;
-    max-width: 230px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 94px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  text-align: center;
+  color: #FCFCFC;
+  max-width: 230px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 94px;
+}
+
+@media (min-width: 768px) {
+  .adv-descr2 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv-descr2 {
+    font-size: 16px;
+  }
 }
 
 .adv-descr3 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 170%;
-    text-align: center;
-    color: #FCFCFC;
-    max-width: 230px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 94px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 170%;
+  text-align: center;
+  color: #FCFCFC;
+  max-width: 230px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 94px;
 }
 
+@media (min-width: 768px) {
+  .adv-descr3 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .adv-descr3 {
+    font-size: 16px;
+  }
+}
 
 .adv-descr1::after {
-    position: absolute;
-    content: ' ';
-    background-image: url("../images/cow.png");
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transform: translate(-230%, -300%);
-    @media screen and (min-width: 768px) {
-            transform: translate(-140%, -400%);
-        }
-                @media screen and (min-width: 1200px) {
-                    transform: translate(-225%, -340%);
-                }
+  position: absolute;
+  content: ' ';
+  background-image: url("../images/cow.png");
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-230%, -300%);
+  @media screen and (min-width: 768px) {
+    transform: translate(-110%, -460%);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translate(-160%, -470%);
+  }
 }
 
 .adv-descr2::after {
-    position: absolute;
-    content: ' ';
-    background-image: url("../images/weight.png");
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transform: translate(-230%, -300%);
-    @media screen and (min-width: 768px) {
-            transform: translate(-140%, -400%);
-        }
-                @media screen and (min-width: 1200px) {
-                    transform: translate(-225%, -340%);
-                }
+  position: absolute;
+  content: ' ';
+  background-image: url("../images/weight.png");
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-230%, -300%);
+  @media screen and (min-width: 768px) {
+    transform: translate(-110%, -460%);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translate(-160%, -470%);
+  }
 }
 
 .adv-descr3::after {
-    position: absolute;
-    content: ' ';
-    background-image: url("../images/ice\ crema.png");
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transform: translate(-230%, -300%);
-    @media screen and (min-width: 768px) {
-            transform: translate(-140%, -400%);
-        }
-                @media screen and (min-width: 1200px) {
-                    transform: translate(-225%, -340%);
-                }
+  position: absolute;
+  content: ' ';
+  background-image: url("../images/ice\ crema.png");
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transform: translate(-230%, -300%);
+  @media screen and (min-width: 768px) {
+    transform: translate(-110%, -460%);
+  }
+  @media screen and (min-width: 1200px) {
+    transform: translate(-160%, -470%);
+  }
 }

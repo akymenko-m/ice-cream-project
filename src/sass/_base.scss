@@ -1,17 +1,26 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
   margin: 0;
   padding: 0;
   text-decoration: none;
   font-style: normal;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
   padding: 0;
 }
@@ -22,11 +31,17 @@ img {
   height: auto;
 }
 
-input, textarea {
+input,
+textarea {
   outline: none;
 }
 
 a {
   outline: none;
   text-decoration: none;
+  cursor: url('../images/cursor.svg'), pointer;
+}
+
+button {
+  cursor: url('../images/cursor.svg'), pointer;
 }

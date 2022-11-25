@@ -45,11 +45,15 @@
     padding: 0;
     background-color: transparent;
     border: none;
-    cursor: pointer;
 
     @media screen and (min-width: 768px) {
       width: 24px;
       height: 24px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
     }
   }
 
@@ -100,6 +104,7 @@
     &:hover,
     &:focus {
       fill: #e3e3e3;
+      cursor: url('../images/cursor.svg'), pointer;
     }
 
     &:active {

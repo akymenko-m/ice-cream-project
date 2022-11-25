@@ -120,6 +120,7 @@
     }
 }
 
-// .swiper-slide {
-//   margin-bottom: 32px;
-// }
+.swiper-slide {
+  overflow: hidden;
+  border-radius: 18px;
+}

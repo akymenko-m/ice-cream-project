@@ -1,11 +1,27 @@
-<div class="product-modal">
-        <button type="button" class="product-modal-btn-close">X</button>
-        <p class="product-modal__title">Chololate icecream</p>
+<div class="backdrop is-hidden" product-data-modal>
+    <div class="modal">
+        <button product-data-modal-close type="button" class="btn-modal"><svg class="btn-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg></button>
+        <p class="product-modal__title">Chocolate icecream</p>
+<div class="modal__bg-circle"></div>
         <ul class="elements-list">
-            <li class="elements-list__item">320 kcal</li>
-            <li class="elements-list__item">4g Prote...</li>
-            <li class="elements-list__item">8,2g Fats</li>
-            <li class="elements-list__item">40,4g Carbs</li>
+            <li class="elements-list__item">
+                <div class="item-container">kcal<div class="item-circle">320</div>
+                </div>
+            </li>
+            <li class="elements-list__item">
+                <div class="item-container">Prote...<div class="item-circle">4g</div>
+                </div>
+            </li>
+            <li class="elements-list__item">
+                <div class="item-container">Fats<div class="item-circle">8,2g</div>
+                </div>
+            </li>
+            <li class="elements-list__item">
+                <div class="item-container">Carbs<div class="item-circle">40,4g</div>
+                </div>
+            </li>
         </ul>
         <p class="ingredients-list__title">Ingredients</p>
         <ul class="ingredients-list">
@@ -41,3 +57,4 @@
             <button type="submit" class="product-modal-btn">Submit</button>
         </form>
     </div>
+</div>

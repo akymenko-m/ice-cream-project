@@ -353,7 +353,7 @@
 
 @media (min-width: 768px) {
   .menu__button {
-    max-width: 121px;
+  display: none;
   }
 }
 
@@ -598,7 +598,11 @@
     gap: 26px;
   }
 }
-
+.form__button {
+  @extend %button;
+  max-width: 152px;
+  padding: 12px 34px;
+}
 .form__icon {
   position: absolute;
   top: 50%;

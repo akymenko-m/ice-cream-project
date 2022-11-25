@@ -53,8 +53,8 @@
     letter-spacing: .04em;
     text-align: center;
     text-transform: uppercase;
-    color: #131313;
-    background-color: #F8D24E;
+    color: $dark-text-color;
+    background-color: $accent-color;
     border-radius: 4px;
     @media screen and (min-width:768px) {
         margin-bottom: 32px;
@@ -73,7 +73,7 @@
     font-style: normal;
     line-height: calc(22/12);
     letter-spacing: .04em;
-    color: #131313;
+    color: $dark-text-color;
     @media screen and (min-width:768px) {
         font-size: 14px;
     }
@@ -91,7 +91,7 @@
     font-size: 12px;
     line-height: calc(22/12);
     letter-spacing: .04em;
-    color: #D6936D;
+    color: $link-text-color;
     .contacts__item:nth-child(2) & {
         max-width: 212px;
     }
@@ -111,10 +111,14 @@
     position: relative;
     margin: 23px 0;
     padding: 23px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     @media screen and (min-width:768px) {
         margin-top: 32px;
         margin-bottom: 29px;
         padding: 32px 0;
+        gap: 12px;
     }
     @media screen and (min-width:1200px) {
         margin-bottom: 32px;
@@ -126,7 +130,7 @@
         height: 1px;
         position: absolute;
         top: 0;
-        background-color: #E1E1E1;
+        background-color: $divided-line-color;
     }
     &::after {
         content: "";
@@ -135,7 +139,7 @@
         height: 1px;
         position: absolute;
         bottom: 0;
-        background-color: #E1E1E1;
+        background-color: $divided-line-color;
     }
 }
 
@@ -150,7 +154,7 @@
     font-weight: 500;
     font-size: 12px;
     line-height: calc(22/12);
-    color: #131313;
+    color: $dark-text-color;
     @media screen and (min-width:768px) {
         font-size: 14px;
     }
@@ -171,9 +175,6 @@
         font-size: 16px;
     }
 }
-// .contacts__work-time:nth-child(2) .contacts__work-hours {
-//     margin-bottom: 8px;
-// }
 
 .contacts__link {
     display: block;
@@ -182,7 +183,7 @@
     font-size: 12px;
     line-height: 183%;
     line-height: calc(22/12);
-    color: #131313;
+    color: $dark-text-color;
     text-decoration: none;
     @media screen and (min-width:768px) {
         font-size: 14px;
@@ -219,31 +220,31 @@
     font-weight: 600;
     font-size: 14px;
     line-height: calc(18/14);
-    color: #131313;
+    color: $dark-text-color;
     
 }
 .contacts__button--full {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        background-color: #0A8817;
-        color: #FFFFFF;
+        background-color: $hover-bg-color;
+        color: $white-color;
     }
     &:hover .contacts__icon-next, &:focus .contacts__icon-next {
-        fill: #FFFFFF;
+        fill: $white-color;
     }
 }
 .contacts__button--border {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover, &:focus {
-        border-color: #0A8817;
-        color: #FFFFFF;
+        border-color: $hover-bg-color;
+        color: $white-color;
     }
     &:hover .contacts__icon-next, &:focus .contacts__icon-next {
-        fill: #FFFFFF;
+        fill: $white-color;
     }
 }
 .contacts__icon-next {
     margin-left: 4px;
-    fill: #000000;
+    fill: $black-color;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

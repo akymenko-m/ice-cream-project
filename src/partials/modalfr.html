@@ -1,36 +1,76 @@
-<div class="backdrop__modalfr is-hidden" data-modal-fr>
-  <div class="modalfr">
-    <button type="button" class="modalfr__bnt-close" data-modal-close-fr>
-      <svg class="modalfr__close-icon" width="20" height="20">
+<div class="backdrop__modal-fr is-hidden" data-modal-fr>
+  <div class="modal-fr">
+    <button type="button" class="modal-fr__bnt-close" data-modal-close-fr>
+      <svg class="modal-fr__close-icon" width="20" height="20">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-
-    <p class="modalfr__title">
-      Thank you for your interest in owning an Ice Cream shop
+    <p class="modal-fr__title">Thank you for your interest in owning an Ice Cream shop
     </p>
-    <p class="modalfr__text">
+    <p class="modal-fr__text">
       Due to the overwhelming volume of franchise requests we are not accepting
       new franchisee applications at this time. Once the application process
       resumes, we will contact you for further information. Please fill out the
       contact information below and we will reach out for additional
       information. We appreciate your patience.
     </p>
-    <form class="modalfr__form">
+    <form class="modal-fr__form">
+      
+        <div class="modal-fr__field">
+          
+          
+            <input
+              type="text"
+              class="modal-fr__input"
+              name="user-name"
+              placeholder="Name"
+              required
+              id="user-name"
+            />
+            
+          
+        </div>
+        <div class="modal-fr__field">
+          
+          
+            <input
+              type="tel"
+              class="modal-fr__input"
+              name="user-tel"
+              placeholder="Phone"
+              required
+              id="user-tel"
+            />
+            
+          
+        </div>
+        <div class="modal-fr__field">
+          
+          
+            <input
+              type="email"
+              class="modal-fr__input"
 
-    </form>
-    <!-- <div class="modal-locations__map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3026.0578723322974!2d-73.95473400000002!3d40.672693800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b9e1735b38f%3A0xb5fe454b88e9c2c0!2zNzI2IFN0ZXJsaW5nIFBsLCBCcm9va2x5biwgTlkgMTEyMTYsINCh0KjQkA!5e0!3m2!1sru!2sua!4v1669237769233!5m2!1sru!2sua"
-        width="450"
-        height="260"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </div> -->
-
-    <button type="button" class="modalfr_button button">Submit</button>
+              name="user-email"
+              placeholder="Email"
+              required
+              id="user-email"
+            />
+            
+          
+        </div>
+        <div class="modal-fr__field-area">
+          <!-- <label for="user-comment" class="modal-label"></label> -->
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            class="modal-fr__form-text"
+            placeholder="Comment"
+          ></textarea>
+        </div>
+        
+        <button type="submit" class="modal-fr__button button">Submit</button>
+      </form>
+    
   </div>
 </div>

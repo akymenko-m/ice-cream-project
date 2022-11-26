@@ -527,7 +527,8 @@
 .modal-buy {
   position: relative;
   width: 100%;
-  height: 984px;
+  height: 100%;
+  overflow: scroll;
   background-color: #FFFFFF;
   border: 2px solid #F8D24E;
   border-radius: 10px;

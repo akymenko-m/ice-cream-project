@@ -49,7 +49,7 @@
     box-sizing: border-box;
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: none;
     left: 93%;
     top: 1%;
     transform: translateX(-50%);
@@ -58,6 +58,11 @@
             height: 24px;
             left: 97%;
         }
+}
+
+.btn-svg:hover,
+.btn-svg:focus{
+fill: $accent-color;
 }
 
 .btn-svg {
@@ -95,6 +100,9 @@
     background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
     margin-bottom: 40px;
+    @media screen and (min-width: 768px) {
+            height: 132px;
+        }
 }
 
 .modal__bg-circle::after {
@@ -105,6 +113,9 @@
     border-radius: 50%;
     background-image: url("../images/modal-icecream.jpg");
     transform: translateY(-5%);
+    @media screen and (min-width: 768px) {
+            height: 132px;
+        }
 }
 
 .item-container {
@@ -113,6 +124,11 @@
     border: 2px solid #9CBE8F;
     border-radius: 40px;
     padding-top: 50px;
+    @media screen and (min-width: 768px) {
+            width: 65px;
+                height: 90px;
+                padding-top: 66px;
+        }
 }
 
 .elements-list {
@@ -151,6 +167,11 @@
     line-height: 2.8;
     color: $dark-text-color;
     transform: translate(7%, -150%);
+    @media screen and (min-width: 768px) {
+            width: 53px;
+            height: 53px;
+            transform: translate(8%, -150%);
+        }
 }
 
 .ingredients-list__title {
@@ -204,6 +225,7 @@
     border: 1px solid rgba(132, 161, 120, 1);
     border-radius: 10px;
     padding: 11px;
+    background: rgba(248, 210, 78, 0.1);
     @media screen and (min-width: 768px) {
         padding: 11px 16px;
         }
@@ -224,7 +246,7 @@
     border-radius: 10px;
     resize: none;
     padding: 11px;
-    padding: 11px;
+    background: rgba(248, 210, 78, 0.1);
         @media screen and (min-width: 768px) {
             padding: 11px 16px;
         }

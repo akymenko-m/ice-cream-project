@@ -2,8 +2,12 @@
     padding-top: 60px;
     padding-bottom: 116px;
     background-color: $green-background;
-    @media screen  and (min-width:1200px) {
+    @media screen and (min-width:768px) {
+        padding-bottom: 86px;
         margin-bottom: -1px;
+    }
+    @media screen  and (min-width:1200px) {
+        padding-bottom: 99px;
     }
 }
 
@@ -52,8 +56,8 @@
     margin-bottom: 62px;
     @media screen and (min-width: 768px) {
         width: 50%;
-        width: 336px;
-        height: 356px;
+        width: 330px;
+        height: 330px;
         margin: 0;
         margin-bottom: 86px;
     }
@@ -82,8 +86,8 @@
             background-image: url("../images/cow-2x-mob.jpg");
         }
     @media screen and (min-width: 768px) {
-        width: 336px;
-        height: 356px;
+        width: 330px;
+        height: 330px;
         background-image: url("../images/cow-1x-tab.jpg");
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -108,7 +112,7 @@
     @media screen and (min-width:768px) {
         display: flex;
         flex-direction: row;
-        gap: 32px;
+        gap: 38px;
     }
     @media screen and (min-width:1200px) {
         gap: 100px;
@@ -134,18 +138,14 @@
         margin-bottom: 20px;
     }
     @media screen and (min-width:768px) {
-        max-width: 332px;
+        max-width: 334px;
         margin-bottom: 32px;
         padding: 0;
         padding-top: 8px;
-        gap: 0px;
-        & .about__description-text:nth-child(1) {
-            margin-bottom: 8px;
-        }
+        gap: 8px;
     }
     @media screen and (min-width:1200px) {
         max-width: 463px;
-        gap: 8px;
         margin-bottom: 43px;
         padding-top: 90px;
         & .about__description-text:nth-child(1) {

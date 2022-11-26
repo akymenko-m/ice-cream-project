@@ -261,11 +261,11 @@
 .products-overlay {
     //max-width: 1200px;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     background-position: center;
-    //background-size: cover;
-    background-repeat: repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url("../images/products-bg-1x-mob-min.jpg");
 
     @media (min-device-pixel-ratio: 2),
@@ -286,7 +286,7 @@
 
     @media screen and (min-width: 1200px) {
         background-image: url("../images/products-bg-1x-desk-min.jpg");
-
+        background-position: top;
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {

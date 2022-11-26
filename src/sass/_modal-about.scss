@@ -16,11 +16,9 @@
 
 .modal-about {
   position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  max-width: 280px;
+  min-width: 280px;
+  width: 90%;
+  max-width: 568px;
   min-height: 459px;
   padding: 26px;
   border: 2px solid $accent-color;
@@ -32,7 +30,6 @@
   transform: translate(-50%, -50%) scale(1);
 
   @media screen and (min-width: 768px) {
-    gap: 32px;
     max-width: 568px;
     min-height: 449px;
     padding: 30px 58px;
@@ -79,20 +76,32 @@
     }
   }
 
-  &__video-area {
-    position: relative;
-    width: 224px;
-    height: 199px;
+  .modal-about__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 448px;
+    height: 350px;
+    justify-content: space-between;
 
     @media screen and (min-width: 768px) {
-      width: 448px;
-      height: 205px;
+      gap: 32px;
     }
   }
 
+  &__video-area {
+    position: relative;
+  }
+
   &__video {
+    display: block;
+    min-width: 224px;
+    min-height: 199px;
+    max-width: 448px;
+    max-height: 205px;
     width: 100%;
-    height: 100%;
     border-radius: 10px;
     background-color: $black-color;
 

@@ -1,10 +1,10 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[product-data-modal-open]"),
-    openModalBtn2: document.querySelector("[product-data-modal-open2]"),
-    openModalBtn3: document.querySelector("[product-data-modal-open3]"),
-    closeModalBtn: document.querySelector("[product-data-modal-close]"),
-    modal: document.querySelector("[product-data-modal]"),
+    openModalBtn: document.querySelector("[data-product-modal-open]"),
+    openModalBtn2: document.querySelector("[data-product-modal-open2]"),
+    openModalBtn3: document.querySelector("[data-product-modal-open3]"),
+    closeModalBtn: document.querySelector("[data-product-modal-close]"),
+    modal: document.querySelector("[data-product-modal]"),
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);

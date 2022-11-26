@@ -9,7 +9,7 @@
   padding: 12px 24px 0 20px;
   height: 502px;
   position: relative;
-  max-width: 320px;
+  max-width: 480px;
   margin: 0 auto;
 }
 
@@ -543,21 +543,22 @@
 @media (min-width: 768px) {
   .modal-buy {
     width: 528px;
-    height: 644px
+    height: 644px;
+    overflow: auto;
   }
 }
 
 .modal-buy__title {
   font-family: $secondary-font-family;
   text-align: center;
-  font-size: 16px;
+  font-size: 32px;
   margin-bottom: 80px;
   margin-top: 32px;
 }
 
 @media (min-width: 768px) {
   .modal-buy__title {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 100px;
   }
 }

@@ -58,8 +58,8 @@
         margin-bottom: 86px;
     }
     @media screen and (min-width: 1200px) {
-        width: 500px;
-        height: 500px;
+        width: 490px;
+        height: 490px;
         margin: 0;
         margin-bottom: 89px;
     }
@@ -94,6 +94,7 @@
     @media screen and (min-width: 1200px) {
         width: 490px;
         height: 490px;
+        transform: translateY(8%);
         background-image: url("../images/cow-1x-desk.jpg");
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),

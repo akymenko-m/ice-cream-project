@@ -41,7 +41,6 @@
   padding: 12px 26px;
   border: 0;
   border-radius: 10px;
-  cursor: pointer;
   font-family: inherit;
   background-color: #F8D24E;
   color: #131313;
@@ -211,7 +210,6 @@ a {
   margin: 0;
   padding: 0;
   background-color: transparent;
-  cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
@@ -536,7 +534,6 @@ a {
   line-height: 1.29;
   text-align: center;
   color: #000000;
-  cursor: pointer;
   background-color: #F8D24E;
   padding: 12px 51px 12px 34px;
   border: none;
@@ -1222,7 +1219,6 @@ a {
   padding: 0;
   background-color: transparent;
   border: none;
-  cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-locations__bnt-close:hover, .modal-locations__bnt-close:focus {
@@ -1348,7 +1344,6 @@ a {
   height: 20px;
   background-color: transparent;
   border: none;
-  cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modalfrs__bnt-close:hover, .modalfrs__bnt-close:focus {
@@ -1530,7 +1525,6 @@ a {
   margin: 0 auto;
   border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .products__item-container, .products__item-container3, .products__item-container2, .products__item-container1 {
@@ -1858,7 +1852,6 @@ a {
   padding: 0;
   width: 20px;
   height: 20px;
-  cursor: pointer;
   background-color: #FCFCFC;
   box-sizing: border-box;
   position: absolute;

@@ -2,6 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   letter-spacing: 0.04em;
+  cursor: url('../images/cursor.svg'), auto;
 }
 
 h1,
@@ -39,9 +40,9 @@ textarea {
 a {
   outline: none;
   text-decoration: none;
-  cursor: url('../images/cursor.svg'), pointer;
+  cursor: url('../images/cursor.svg'), auto;
 }
 
 button {
-  cursor: url('../images/cursor.svg'), pointer;
+  cursor: url('../images/cursor.svg'), auto;
 }

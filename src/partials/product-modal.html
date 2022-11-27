@@ -1,60 +1,95 @@
 <div class="backdrop is-hidden" data-product-modal>
-    <div class="modal">
-        <button data-product-modal-close type="button" class="btn-modal"><svg class="btn-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-close"></use>
-            </svg></button>
-        <p class="product-modal__title">Chocolate icecream</p>
-<div class="modal__bg-circle"></div>
-        <ul class="elements-list">
-            <li class="elements-list__item">
-                <div class="item-container">kcal<div class="item-circle">320</div>
-                </div>
-            </li>
-            <li class="elements-list__item">
-                <div class="item-container">Prote...<div class="item-circle">4g</div>
-                </div>
-            </li>
-            <li class="elements-list__item">
-                <div class="item-container">Fats<div class="item-circle">8,2g</div>
-                </div>
-            </li>
-            <li class="elements-list__item">
-                <div class="item-container">Carbs<div class="item-circle">40,4g</div>
-                </div>
-            </li>
-        </ul>
-        <p class="ingredients-list__title">Ingredients</p>
-        <ul class="ingredients-list">
-            <li class="ingredients-list__item">
-                <p class="ingredients-list__item-dose">Milk</p>
-                <p class="ingredients-list__item-dose">100ml</p>
-            </li>
-            <li class="ingredients-list__item">
-                <p class="ingredients-list__item-dose">Belgian chocolate</p>
-                <p class="ingredients-list__item-dose">20g</p>
-            </li>
-            <li class="ingredients-list__item">
-                <p class="ingredients-list__item-dose">Cream</p>
-                <p class="ingredients-list__item-dose">150 ml</p>
-            </li>
-            <li class="ingredients-list__item">
-                <p class="ingredients-list__item-dose">Cocoa powder</p>
-                <p class="ingredients-list__item-dose">30g</p>
-            </li>
-            <li class="ingredients-list__item">
-                <p class="ingredients-list__item-dose">Sugar</p>
-                <p class="ingredients-list__item-dose">40g</p>
-            </li>
-            <li class="ingredients-list__item">
-                <p class="ingredients-list__item-dose">Vanilla sugar</p>
-                <p class="ingredients-list__item-dose">10g</p>
-            </li>
-        </ul>
-        <form class="product-modal-form">
-            <div><input type="text" class="form-input" name="names" id="names" placeholder="Name" /></div>
-            <div><input type="tel" class="form-input" name="tels" id="tels" placeholder="Phone" /></div>
-            <div><textarea class="form-comment" name="comments" id="comments" placeholder="Comment"></textarea></div>
-            <button type="submit" class="product-modal-btn">Submit</button>
-        </form>
-    </div>
+  <div class="modal">
+    <button data-product-modal-close type="button" class="btn-modal">
+      <svg class="btn-svg" width="20" height="20">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <p class="product-modal__title">Chocolate icecream</p>
+    <div class="modal__bg-circle"></div>
+    <ul class="elements-list">
+      <li class="elements-list__item">
+        <div class="item-container">
+          kcal
+          <div class="item-circle">320</div>
+        </div>
+      </li>
+      <li class="elements-list__item">
+        <div class="item-container">
+          Prote...
+          <div class="item-circle">4g</div>
+        </div>
+      </li>
+      <li class="elements-list__item">
+        <div class="item-container">
+          Fats
+          <div class="item-circle">8,2g</div>
+        </div>
+      </li>
+      <li class="elements-list__item">
+        <div class="item-container">
+          Carbs
+          <div class="item-circle">40,4g</div>
+        </div>
+      </li>
+    </ul>
+    <p class="ingredients-list__title">Ingredients</p>
+    <ul class="ingredients-list">
+      <li class="ingredients-list__item">
+        <p class="ingredients-list__item-dose">Milk</p>
+        <p class="ingredients-list__item-dose">100ml</p>
+      </li>
+      <li class="ingredients-list__item">
+        <p class="ingredients-list__item-dose">Belgian chocolate</p>
+        <p class="ingredients-list__item-dose">20g</p>
+      </li>
+      <li class="ingredients-list__item">
+        <p class="ingredients-list__item-dose">Cream</p>
+        <p class="ingredients-list__item-dose">150 ml</p>
+      </li>
+      <li class="ingredients-list__item">
+        <p class="ingredients-list__item-dose">Cocoa powder</p>
+        <p class="ingredients-list__item-dose">30g</p>
+      </li>
+      <li class="ingredients-list__item">
+        <p class="ingredients-list__item-dose">Sugar</p>
+        <p class="ingredients-list__item-dose">40g</p>
+      </li>
+      <li class="ingredients-list__item">
+        <p class="ingredients-list__item-dose">Vanilla sugar</p>
+        <p class="ingredients-list__item-dose">10g</p>
+      </li>
+    </ul>
+    <form class="product-modal-form">
+      <div>
+        <input
+          type="text"
+          class="form-input"
+          name="names"
+          id="names"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div>
+        <input
+          type="tel"
+          class="form-input"
+          name="tels"
+          id="tels"
+          placeholder="Phone"
+          required
+        />
+      </div>
+      <div>
+        <textarea
+          class="form-comment"
+          name="comments"
+          id="comments"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button type="submit" class="product-modal-btn">Submit</button>
+    </form>
+  </div>
 </div>

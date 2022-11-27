@@ -33,11 +33,15 @@
     font-size: 30px;
     line-height: calc(38/30);
     text-align: center;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $main-text-color;
-    max-width: 200px;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 100%;
     @media screen and (min-width: 768px) {
+        padding-right: 0;
+        padding-left: 0;
         max-width: 460px;
         margin-bottom: 72px;
         font-size: 34px;
@@ -73,13 +77,13 @@
     position: absolute;
     content: " ";
     width: 279px;
-    height: 278px;
+    height: 279px;
     border-radius: 50%;
     background-image: url("../images/cow-1x-mob.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: translateY(10%);
+    transform: translateY(26px);
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
@@ -120,8 +124,7 @@
 }
 
 .about__description {
-    min-width: 220px;
-    max-width: 350px;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
     padding: 0 30px;

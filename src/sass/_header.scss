@@ -5,12 +5,15 @@
 }
 
 .container__background {
-  background: url("../images/hero-bg-mob.png") no-repeat left bottom;
+  background: no-repeat left bottom /100% url("../images/hero-bg-mob.png");
   padding: 12px 24px 0 20px;
   height: 502px;
   position: relative;
   max-width: 480px;
   margin: 0 auto;
+  @media (min-width: 768px){
+    background: url("../images/hero-bg-mob.png") no-repeat left bottom;
+  }
 }
 
 
@@ -97,6 +100,12 @@
   }
 }
 
+.header__title-wrapper{
+  @media (max-width: 768px) {
+    width: 280px;
+    margin: 0 auto;
+  }
+}
 
 .header__title {
   font-family: 'Seymour One', sans-serif;
@@ -187,17 +196,22 @@
 
 
 .header__picture-hero {
+  width: 176px;
   position: absolute;
   bottom: 0;
-  left: 80px;
-  animation: animateHero 1.5s;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: animateHeroMobile 1.5s;
 }
 
 @media (min-width: 768px) {
   .header__picture-hero {
+    width:auto;
     position: absolute;
     bottom: 0;
     left: 400px;
+    transform: translateX(0);
+    animation: animateHero 1.5s;
   }
 }
 
@@ -206,20 +220,22 @@
     position: absolute;
     bottom: 0;
     left: 652px;
+    transform: translateX(0);
+    animation: animateHero 1.5s;
   }
 }
 
 .header__picture-blur {
   position: absolute;
-  bottom: -10px;
-  left: 80px;
+  bottom: -30px;
+  left: 50%;
   width: 187px;
   height: 239px;
   background: rgba(252, 252, 252, 0.44);
   filter: blur(26.8405px);
   border-radius: 70px;
-  transform: rotate(20deg);
-  animation: animateBlur 1.5s;
+  transform: rotate(20deg) translateX(-50%);
+  animation: animateBlurMobile 1.5s;
 }
 
 @media (min-width: 768px) {
@@ -232,6 +248,8 @@
     background: rgba(252, 252, 252, 0.44);
     filter: blur(26.8405px);
     border-radius: 110px;
+    transform: rotate(20deg) translateX(0);
+    animation: animateBlur 1.5s;
   }
 }
 
@@ -245,6 +263,24 @@
     background: rgba(252, 252, 252, 0.44);
     filter: blur(26.8405px);
     border-radius: 190px;
+    transform: rotate(20deg) translateX(0);
+    animation: animateBlur 1.5s;
+  }
+}
+@keyframes animateHeroMobile {
+  0% {
+    transform: translateY(60%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0) translateX(-50%);
+  }
+}
+@keyframes animateBlurMobile {
+  0% {
+    transform: translateY(60%) translateX(-50%);
+  }
+  100% {
+    transform: translateY(0) rotate(20deg) translateX(-50%);
   }
 }
 @keyframes animateHero {

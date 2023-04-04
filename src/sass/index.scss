@@ -1,6 +1,7 @@
 @import './variables';
 @import './common';
 @import './base';
+@import './mixins';
 @import './header';
 @import './gallery';
 @import './about';
@@ -10,12 +11,8 @@
 @import './contacts';
 @import './modal-locations';
 @import './modalfr';
-
-@import './header';
 @import './modal-about';
 @import './products';
 @import './new-gallery';
-@import './mixins';
 @import './modal-products';
 @import './footer';
-

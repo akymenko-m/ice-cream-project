@@ -17,3 +17,11 @@ HTML, SASS, JS, Parcel
   map, a franchise application form.
 - The functions of opening/closing modal windows, gallery slider, mobile menu
   are implemented with JS.
+
+# Setup
+
+- Clone the repository to your local machine.
+- Open the project in VSCode. Install the project's dependencies in the terminal
+  with the npm install command.
+- Start development mode by running the npm start command.
+- Go to http://localhost:1234 in your browser.

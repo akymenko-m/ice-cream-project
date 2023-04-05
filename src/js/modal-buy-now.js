@@ -48,4 +48,27 @@
     window.removeEventListener('keydown', onKeyClick);
     window.removeEventListener('click', onCloseModalbyBackdrop);
   }
+
+  //form submit
+  const buyNowForm = document.querySelector('.form');
+
+  buyNowForm.addEventListener('submit', handleSubmit);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const {
+      elements: { name, phone, comment },
+    } = event.currentTarget;
+
+    const clientRequest = {
+      name: name.value,
+      phone: phone.value,
+      comment: comment.value,
+    };
+
+    event.currentTarget.reset();
+    toggleModal();
+
+    return clientRequest;
+  }
 })();

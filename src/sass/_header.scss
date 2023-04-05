@@ -505,7 +505,9 @@
   gap: 20px;
 }
 
-.header__places-number {
+.header__places-number,
+.header__cafes-number,
+.header__trucks-number {
   font-size: 28px;
   font-weight: 900;
   color: $dark-text-color;
@@ -514,7 +516,9 @@
 }
 
 @media (min-width: 1200px) {
-  .header__places-number {
+  .header__places-number,
+  .header__cafes-number,
+  .header__trucks-number {
     font-size: 46px;
   }
 }
@@ -530,12 +534,6 @@
     font-size: 14px;
   }
 }
-
-// .backdrop__modal-buy.is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
 
 .backdrop__modal-buy.is-hidden .modal {
   transform: scale(1.2);

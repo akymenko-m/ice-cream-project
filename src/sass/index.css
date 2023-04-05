@@ -585,7 +585,9 @@ button {
   gap: 20px;
 }
 
-.header__places-number {
+.header__places-number,
+.header__cafes-number,
+.header__trucks-number {
   font-size: 28px;
   font-weight: 900;
   color: #131313;
@@ -594,7 +596,9 @@ button {
 }
 
 @media (min-width: 1200px) {
-  .header__places-number {
+  .header__places-number,
+  .header__cafes-number,
+  .header__trucks-number {
     font-size: 46px;
   }
 }

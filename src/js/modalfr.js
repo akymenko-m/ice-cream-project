@@ -46,4 +46,28 @@
     window.removeEventListener('keydown', onKeyClick);
     window.removeEventListener('click', onCloseModalbyBackdrop);
   }
+
+  //form submit
+  const franchiseForm = document.querySelector('.modal-fr__form');
+
+  franchiseForm.addEventListener('submit', handleSubmit);
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const {
+      elements: { name, phone, email, comment },
+    } = event.currentTarget;
+
+    const clientRequest = {
+      name: name.value,
+      phone: phone.value,
+      email: email.value,
+      comment: comment.value,
+    };
+
+    event.currentTarget.reset();
+    toggleModal();
+
+    return clientRequest;
+  }
 })();

@@ -531,11 +531,11 @@
   }
 }
 
-.backdrop__modal-buy.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
+// .backdrop__modal-buy.is-hidden {
+//   visibility: hidden;
+//   opacity: 0;
+//   pointer-events: none;
+// }
 
 .backdrop__modal-buy.is-hidden .modal {
   transform: scale(1.2);

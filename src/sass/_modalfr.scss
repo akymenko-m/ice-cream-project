@@ -7,12 +7,6 @@
   padding: 15px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
-
-  &.is-hidden {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
 }
 
 .backdrop__modal-fr.is-hidden .modal-fr {

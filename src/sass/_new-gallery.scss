@@ -61,9 +61,17 @@
   }
 }
 
-.swiper-button-prev,
+.swiper-button-prev {
+  color: $white-color;
+  @media screen and (min-width: 1200px) {
+    left: 30px;
+  }
+}
 .swiper-button-next {
   color: $white-color;
+  @media screen and (min-width: 1200px) {
+    right: 30px;
+  }
 }
 
 .gallery .swiper-button-prev,

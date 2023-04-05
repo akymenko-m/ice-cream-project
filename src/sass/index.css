@@ -58,6 +58,10 @@
   visibility: hidden;
 }
 
+.scroll-hidden {
+  overflow: hidden;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -605,12 +609,6 @@ button {
     font-size: 14px;
   }
 }
-.backdrop__modal-buy.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .backdrop__modal-buy.is-hidden .modal {
   transform: scale(1.2);
 }
@@ -1833,11 +1831,6 @@ button {
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
 }
-.backdrop__modal-locations.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-}
 
 @media screen and (min-width: 320px) {
   .backdrop__modal-locations.is-hidden .modal-locations {
@@ -1970,11 +1963,6 @@ button {
   padding: 15px 15px;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: scroll;
-}
-.backdrop__modal-fr.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
 }
 
 @media screen and (min-width: 320px) {
@@ -2730,9 +2718,22 @@ button {
   }
 }
 
-.swiper-button-prev,
+.swiper-button-prev {
+  color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .swiper-button-prev {
+    left: 30px;
+  }
+}
+
 .swiper-button-next {
   color: #ffffff;
+}
+@media screen and (min-width: 1200px) {
+  .swiper-button-next {
+    right: 30px;
+  }
 }
 
 .gallery .swiper-button-prev,
@@ -2751,12 +2752,6 @@ button {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
-}
-
-.backdrop.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
 
 .backdrop.is-hidden .modal {
